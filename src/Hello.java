@@ -43,6 +43,20 @@ public class Hello {
             String s  = (isDomestic) ? "This car is domestic" : "This car is not domestic";
 
             System.out.println(s);
+
+            double firstVariable = 20.00d;
+            double secondVariable = 80.00d;
+
+            double resultStep3 = (firstVariable + secondVariable) * 100.00d;
+            System.out.println("MyValueTotal = " + resultStep3);
+            double resultStep4 = resultStep3 %  40.00d;
+            System.out.println("theRemainder = " + resultStep4);
+            boolean resultStep5 = resultStep4 == 0.00 ? true : false;
+            System.out.println("isNoRemainder = " + resultStep5);
+            System.out.println(resultStep5);
+            if (!resultStep5){
+                System.out.println("got some remainder");
+            }
         }
     }
 }
